@@ -19,6 +19,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
+            pwd
             az storage blob upload-batch --account-name staticrcashyia -d '$web' -s frontend/
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
