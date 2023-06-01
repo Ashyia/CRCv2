@@ -21,7 +21,7 @@ jobs:
       with:
         inlineScript: |
             pwd
-            az storage blob upload-batch --account-name staticrcashyia -d '$web' -s frontend/ --overwrite --auth-mode login
+            az storage blob upload-batch --account-name staticrcashyia -d '$web' -s frontend/ --overwrite
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
